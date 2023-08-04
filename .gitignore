@@ -1,0 +1,7 @@
+/db/dbconf.yml
+/infra/terraform.tfvars
+/infra/terraform.tfstate
+/infra/terraform.tfstate.backup
+/infra/.terraform*
+.idea/
+build/
