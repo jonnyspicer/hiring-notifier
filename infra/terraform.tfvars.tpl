@@ -4,3 +4,6 @@
 db_username = ""
 db_password = ""
 email = ""
+create_IP = ""
+public_key = ""
+region = ""

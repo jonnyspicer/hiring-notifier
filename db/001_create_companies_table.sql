@@ -1,6 +1,7 @@
 -- +goose Up
 -- +goose StatementBegin
 CREATE TYPE platform AS ENUM ('greenhouse', 'lever', 'bamboo')
+-- +goose StatementEnd
 
 CREATE TABLE companies (
    id SERIAL PRIMARY KEY,
@@ -17,5 +18,6 @@ CREATE TABLE companies (
 -- +goose StatementBegin
 DROP TABLE companies;
 
+-- +goose StatementBegin
 DROP TYPE platform;
 -- +goose StatementEnd

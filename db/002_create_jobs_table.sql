@@ -3,9 +3,10 @@
 CREATE TYPE remote AS ENUM ('remote', 'onsite', 'hybrid');
 
 CREATE TABLE jobs (
-      id SERIAL PRIMARY KEY,
+      id VARCHAR(255) NOT NULL UNIQUE PRIMARY KEY,
       title VARCHAR(255) NOT NULL,
       department VARCHAR(255),
+      team VARCHAR(255),
       location VARCHAR(255),
       remote remote NOT NULL,
       link VARCHAR(255),
